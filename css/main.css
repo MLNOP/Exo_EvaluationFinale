@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.Icon {
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 2em;
+  height: 2em;
+  /* Bel alignement visuel des icônes avec le texte */
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: black;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+       Si vous utilisez normalize.css, inutile de l’ajouter. */
+  overflow: hidden;
+}
+
+/*icons*/
+/*Les differentes polices d'ecritures*/
+@font-face {
+  font-family: 'Bernina';
+  src: url("../fonts/BerninaSans-Web-CondensedBold.woff2");
+}
+
+@font-face {
+  font-family: 'GothamHTF';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GothamHTF-Book.woff");
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'GothamHTF';
+}
+
+.header {
+  height: 50px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  width: 60%;
+}
+
+.header a {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.header a img {
+  width: 50px;
+}
+
+.mainBG img {
+  width: 100%;
+}
+
+.icoSlogan {
+  display: flex;
+  justify-content: center;
+}
+
+.icoSlogan .Icon {
+  width: 5em;
+  height: 5em;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+}
+
+.slogan h1 {
+  color: orange;
+  text-align: center;
+}
+
+.slogan h1 p {
+  font-size: 20px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
+.stats img {
+  width: 100%;
+}
+
+.stats p {
+  text-align: center;
+}
+
+.stats .coop {
+  width: 170px;
+  font-size: 20px;
+  color: #c3a575;
+}
+
+.stats .photovoltaique {
+  width: 170px;
+  font-size: 20px;
+  color: #ddeaac;
+}
+
+.stats .lightning {
+  width: 170px;
+  font-size: 20px;
+  color: #fcb731;
+}
+
+.stats .vente {
+  width: 170px;
+  font-size: 20px;
+  color: #00afec;
+}
+
+.text {
+  padding: 1%;
+}
+
+.text h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.text .comprendre {
+  background-color: #6d6f71;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.text .comprendre h3 {
+  text-align: center;
+  color: white;
+}
+
+.text .plus {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text .subscribe {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: 500;
+  line-height: 2.2em;
+  text-decoration: none;
+  color: black;
+}
+
+.actu {
+  color: white;
+  width: 100%;
+  background-color: orange;
+}
+
+.actu .articleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actu .imgArticle {
+  padding: 5px;
+  width: 85%;
+}
+
+.actu .content {
+  padding: 10px;
+}
+
+.demarches {
+  color: white;
+  width: 100%;
+  background-color: #b3d143;
+}
+
+.demarches .articleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.demarches .imgArticle {
+  padding: 5px;
+  width: 85%;
+}
+
+.demarches .content {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

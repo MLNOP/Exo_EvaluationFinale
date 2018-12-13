@@ -1,0 +1,12 @@
+.Icon {
+    /* Permet de redimensionner en changeant la font-size de l’icône */
+    width: 2em;
+    height: 2em;
+    /* Bel alignement visuel des icônes avec le texte */
+    vertical-align: -0.15em;
+    /* fill par défaut = valeur de la propriété couleur de son élément parent */
+    fill: black;
+    /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+       Si vous utilisez normalize.css, inutile de l’ajouter. */
+    overflow: hidden;
+  }

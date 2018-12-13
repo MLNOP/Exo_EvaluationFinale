@@ -1,0 +1,17 @@
+.demarches{
+    color: $titleArticle;
+    width: 100%;
+    background-color: $article2;
+    .articleHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .imgArticle{
+        padding: 5px;
+        width: 85%;
+    }
+    .content{
+        padding: 10px;
+    }
+}
