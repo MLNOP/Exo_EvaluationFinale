@@ -1,0 +1,51 @@
+/*MQ*/
+/*Vue Desktop*/
+@media only screen and (min-width:992px){
+    .presentation{
+        padding: 0 10% 0 10%;
+    }
+    .topics{
+        display: flex;
+        flex-wrap: wrap;
+        .topicTitle{
+            width: 400px;
+        }
+        .topic{
+            width: 400px;
+        }
+    }
+    .comprendre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .actu{
+        padding: 0 10% 0 10%;
+    }
+    .previous{
+        display: none;
+    }
+    .article{
+        display: flex;
+        flex-wrap: wrap;
+        .content{
+            width: 400px;
+        }
+    }
+    .add{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .footer{
+        padding: 0 10% 0 10%;
+        .credentials{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            h2{
+                width: 200px;
+            }
+        }
+    }
+}

@@ -1,71 +1,392 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/*CSS RESET*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
 body {
-  line-height: 1;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-family: Bernina;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6d6f71;
+  text-align: left;
+  background-color: #fafafa;
 }
 
-ol {
-  list-style: none;
+[tabindex="-1"]:focus {
+  outline: none !important;
 }
 
-blockquote, q {
-  quotes: none;
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+dfn {
+  font-style: italic;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+a,
+area,
+button,
+[role="button"],
+input:not([type="range"]),
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
 }
 
-.Icon {
-  /* Permet de redimensionner en changeant la font-size de l’icône */
-  width: 2em;
-  height: 2em;
-  /* Bel alignement visuel des icônes avec le texte */
-  vertical-align: -0.15em;
-  /* fill par défaut = valeur de la propriété couleur de son élément parent */
-  fill: black;
-  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
-       Si vous utilisez normalize.css, inutile de l’ajouter. */
-  overflow: hidden;
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #868e96;
+  text-align: left;
+  caption-side: bottom;
 }
 
-/*icons*/
+th {
+  text-align: inherit;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+output {
+  display: inline-block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/*MQ*/
+/*Vue Desktop*/
+@media only screen and (min-width: 992px) {
+  .presentation {
+    padding: 0 10% 0 10%;
+  }
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .topics .topicTitle {
+    width: 400px;
+  }
+  .topics .topic {
+    width: 400px;
+  }
+  .comprendre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .actu {
+    padding: 0 10% 0 10%;
+  }
+  .previous {
+    display: none;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .article .content {
+    width: 400px;
+  }
+  .add {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer {
+    padding: 0 10% 0 10%;
+  }
+  .footer .credentials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer .credentials h2 {
+    width: 200px;
+  }
+}
+
 /*Les differentes polices d'ecritures*/
 @font-face {
   font-family: 'Bernina';
@@ -79,76 +400,118 @@ table {
   src: url("../fonts/GothamHTF-Book.woff");
 }
 
-body {
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'GothamHTF';
+/*SVG*/
+.Icon {
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 2em;
+  height: 2em;
+  /* Bel alignement visuel des icônes avec le texte */
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: black;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+       Si vous utilisez normalize.css, inutile de l’ajouter. */
+  overflow: hidden;
 }
 
+.svg {
+  width: 0;
+  height: 0;
+}
+
+/*VARIABLES*/
+/*HEADER*/
 .header {
-  height: 50px;
-  padding: 4px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 4px;
 }
 
-.header img {
-  width: 60%;
+.header .logo {
+  height: 30px;
 }
 
-.header a {
-  display: flex;
-  justify-content: flex-end;
-  width: 30%;
+.header #menuIco {
+  height: 30px;
 }
 
-.header a img {
-  width: 50px;
-}
-
-.mainBG img {
+.carousel {
   width: 100%;
 }
 
-.icoSlogan {
-  display: flex;
-  justify-content: center;
+/*MENU TOGGLE*/
+.menu {
+  display: none;
 }
 
-.icoSlogan .Icon {
-  width: 5em;
-  height: 5em;
+.menuAfter {
+  background-color: #b3d143;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  width: 90%;
+  border-radius: 0 0 5px 5px;
+  top: 40px;
+  right: 15px;
 }
 
+.menuAfter hr {
+  color: #FFF;
+  height: 1px;
+}
+
+.menuAfter .menuDrop {
+  list-style-type: none;
+}
+
+.menuAfter .menuDrop a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.menuAfter #subscribes {
+  background-color: orange;
+  padding: 3px;
+  color: black;
+}
+
+/*PRESENTATION ET STATS*/
 .slogan {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
+.slogan .logoWTxt {
+  height: 60px;
+}
+
 .slogan h1 {
-  color: orange;
+  color: #ffa500;
+  font-size: 35px;
   text-align: center;
 }
 
-.slogan h1 p {
+.slogan h1 #slogan {
   font-size: 20px;
 }
 
+/*Stats*/
 .stats {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: auto;
 }
 
-.stats img {
+.stats .Icon {
   width: 100%;
+  height: 70px;
 }
 
-.stats p {
+.stats .desc {
   text-align: center;
 }
 
@@ -164,7 +527,7 @@ body {
   color: #ddeaac;
 }
 
-.stats .lightning {
+.stats .prod {
   width: 170px;
   font-size: 20px;
   color: #fcb731;
@@ -176,44 +539,64 @@ body {
   color: #00afec;
 }
 
-.text {
-  padding: 1%;
+.stats .numbers {
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center;
 }
 
-.text h2 {
+/*Description*/
+#plus {
+  width: 40px;
+}
+
+.description {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description h2 {
   text-align: center;
   font-weight: bold;
 }
 
-.text .comprendre {
+.description .topics {
+  background-image: url("img/svg/points.svg");
+  background-repeat: repeat-x;
+}
+
+.description .comprendre {
   background-color: #6d6f71;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 10px;
 }
 
-.text .comprendre h3 {
+.description .comprendre .understand {
   text-align: center;
   color: white;
 }
 
-.text .plus {
+.description .plus {
   display: flex;
   justify-content: flex-end;
+  width: 40px;
 }
 
-.text .subscribe {
+.description .subscribe {
   background-color: orange;
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 2.2em;
   text-decoration: none;
   color: black;
+  margin: 0 auto;
+  width: 35%;
 }
 
+/*1er article*/
 .actu {
   color: white;
   width: 100%;
@@ -226,34 +609,71 @@ body {
   align-items: center;
 }
 
+.actu .articleHeader a {
+  text-decoration: none;
+}
+
 .actu .imgArticle {
   padding: 5px;
-  width: 85%;
+  width: 400px;
 }
 
 .actu .content {
   padding: 10px;
 }
 
-.demarches {
+/*FOOTER*/
+.footer {
+  padding: 2px;
   color: white;
-  width: 100%;
-  background-color: #b3d143;
+  text-align: center;
+  background-color: #6d6f71;
 }
 
-.demarches .articleHeader {
+.newsletter {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.partenaires {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
 }
 
-.demarches .imgArticle {
-  padding: 5px;
-  width: 85%;
+.partenaires .part {
+  margin: 5px;
+  width: 30px;
 }
 
-.demarches .content {
-  padding: 10px;
+.partenaires img:hover {
+  -webkit-filter: grayscale(0%);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(0%);
+  transition: all 0.3s;
+}
+
+.partenaires img {
+  -webkit-filter: grayscale(100%);
+  /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+.subs img {
+  width: 35px;
+}
+
+.follow img {
+  width: 35px;
+}
+
+.contact img {
+  width: 35px;
+}
+
+.search img {
+  width: 55px;
 }
 
 /*# sourceMappingURL=main.css.map */

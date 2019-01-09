@@ -1,0 +1,101 @@
+/*PRESENTATION ET STATS*/
+.slogan{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .logoWTxt{
+        height: 60px;
+    }
+    h1{
+        color: #ffa500;
+        font-size: 35px;
+        text-align: center;
+        #slogan{
+            font-size: 20px
+        }
+    }
+}
+
+/*Stats*/
+.stats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .Icon{
+        width: 100%;
+        height: 70px;
+    }
+    .desc{
+        text-align: center;
+    }
+    .coop{
+        width: 170px;
+        font-size: 20px;
+        color: $icoCoop;
+    }
+    .photovoltaique{
+        width: 170px;
+        font-size: 20px;
+        color: $icoPhotovoltaique;
+    }
+    .prod{
+        width: 170px;
+        font-size: 20px;
+        color: $icoLightning;
+    }
+    .vente{
+        width: 170px;
+        font-size: 20px;
+        color: $icoVente;
+
+    }
+    .numbers{
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/*Description*/
+#plus{
+    width: 40px;
+}
+.description{
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+        text-align: center;
+        font-weight: bold;
+    }
+    .topics{
+        background-image:  url("img/svg/points.svg");
+        background-repeat: repeat-x;
+    }
+    .comprendre{
+        background-color: $comprendre;
+        border-radius: 10px;
+        .understand{
+            text-align: center;
+            color: $understand;
+        }
+    }
+    .plus{
+        display: flex;
+        justify-content: flex-end;
+        width: 40px;
+    }
+    .subscribe{
+        background-color: $subscribe;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        font-weight: bold;
+        line-height: 2.2em;
+        text-decoration: none;
+        color: $subscribebtn;
+        margin: 0 auto;
+        width: 35%;
+    }
+}

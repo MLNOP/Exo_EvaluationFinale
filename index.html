@@ -6,136 +6,179 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/toggle.js"></script>
 </head>
 <body>
-    <div class="header">
-        <img src="logos/EnergiesCollectives_rectangle_Logo_ajuste.svg" alt="logo">
-        <a href="#">
-            <img src="svg/menu.svg" alt="menu">
-        </a>
-    </div>
-    <div class="mainBG">
-        <img src="Photos/20161202_101925.jpg" alt="Compteur Electrique">
-    </div>
-    <div class="icoSlogan">
-        <svg class="Icon" >
-            <use xlink:href="img/sprite.svg#logo" aria-hidden="true"></use>
-        </svg>
-    </div>
-    <div class="slogan">
-        <h1>L'energie est notre affaire
-            <p>Investissons dans la transition energetique</p>
-        </h1>
-    </div>
-    <div class="stats">
-        <div class="coop">
-                <img class="Icon" src="svg/picto_coop.svg" alt="tirelire">
-            <p>Cooperateurs</p>
-            <p>190</p>
+    <!-- Header avec menu -->
+    <header>
+        <div class="header">
+            <img class="logo" src="img/logos/EnergiesCollectives_rectangle_Logo_ajuste.svg" alt="logo energie collective">
+            <!-- SVG exemple avec menu-->
+                <img id="menuIco" src="img/svg/menu.svg" alt="menu ico">
+            <!-- exemple menu a toggle -->
+            <div id="menu" class="menu">
+                <ul class="menuDrop">
+                    <li><a href="#"><hr>Actualites &rarr;</a><hr></li>
+                    <li><a href="#">Nous connaitre &rarr;</a><hr></li>
+                    <li><a href="#">Nos installations &rarr;</a><hr></li>
+                    <li><a href="#">Economisons &rarr;</a><hr></li>
+                    <li><a href="#">En savoir plus &rarr;</a><hr></li>
+                </ul>
+                <ul class="menuDrop" >
+                    <li><a id="subscribes" href="#">Souscrire</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="photovoltaique">
-                <img class="Icon" src="svg/picto_photovoltaique.svg" alt="tirelire">
-            <p>Installations</p>
-            <p>8</p>
-        </div>
-        <div class="lightning">
-            <img class="Icon" src="svg/picto_production_energie.svg" alt="tirelire">
-            <p>Production</p>
-            <p>Annnuelle</p>
-            <p>141 MWh</p>
-        </div>
-        <div class="vente">
-            <img class="Icon" src="svg/picto_capital.svg" alt="tirelire">
-            <p>Capital</p>
-            <p>112 950 €</p>
-        </div>
-    </div>
-    <article class="text">
-        <h2>blablablablablabla</h2>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <ul>
-            <li>blablablablablablablablablablablablablabla</li>
-            <li>blablablablablablablablablabla</li>
-            <li>blablablablablablablabla</li>
-        </ul>
-        <div class="comprendre">
-            <h3>blablablablablabla</h3>
-            <img src="svg/plus.svg" alt="ajouter">
-        </div>
+        <img class="carousel" src="img/Photos/20161202_101925.jpg" alt="Carousel picture">
+    </header>
+    <br>
+    <main>
+        <!-- Slogan et statistiques de l'entreprise -->
+        <article class="presentation">
+            <!-- Slogan & icone -->
+            <div class="slogan">
+                <img class="logoWTxt" src="img/MAQUETTES/logo_ss_texte.svg" alt="logo">
+                <br>
+                <h1>L'energie est notre affaire<p id="slogan">Investissons dans la transition energetique</p></h1>    
+            </div>
+            <!-- Satistiques -->
+            <div class="stats">
+                    <div class="coop">
+                            <img class="Icon" src="img/svg/picto_coop.svg" alt="logo cooperateurs">
+                        <p class="desc">Cooperateurs</p>
+                        <p class="numbers">190</p>
+                    </div>
+                    <div class="photovoltaique">
+                            <img class="Icon" src="img/svg/picto_photovoltaique.svg" alt="logo photovoltaique">
+                        <p class="desc">Installations</p>
+                        <p class="numbers">8</p>
+                    </div>
+                    <div class="prod">
+                        <img class="Icon" src="img/svg/picto_production_energie.svg" alt="logo eclair">
+                        <p class="desc">Production Annuelle</p>
+                        <p class="numbers">141 MWh</p>
+                    </div>
+                    <div class="vente">
+                        <img class="Icon" src="img/svg/picto_capital.svg" alt="logo tirelire">
+                        <p class="desc">Capital</p>
+                        <p class="numbers">112950 €</p>
+                    </div>
+                </div>
+                <!-- Description de l'entreprise -->
+                <div class="description">
+                    <div class="topics">
+                        <div class="topicTitle">
+                            <h2>Produire et consommer de l'electricite renouvelable et locale c'est possible !</h2>
+                        </div>
+                        <div class="topic">
+                            <p>Habitants, entreprises et collectivites de Serre-Ponçon agissent ensemble, a travers la cooperative pour :
+                                <ul>
+                                    <li>Reduire les gaspillages energetiques : consommer moins pour produire moins,</li>
+                                    <li>Produire l'electricite localement : l'epargne citoyenne est investie dans les installations photovoltaiques</li>
+                                    <li>Agir ensemble pour l'interet collectif : une personne = une voix</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="comprendre">
+                        <h3 class="understand">Comprendre notre modele de production</h3>
+                        <img id="plus" src="img/svg/plus.svg" alt="ajouter">
+                    </div>
+                    <br>
+                    <div class="topics">
+                        <div class="topicTitle">
+                            <h2>Pourquoi devenir societaire d'Energies Collectives ?</h2>
+                        </div>
+                        <div class="topic">
+                            <p>
+                                Pourquoi passer a l'action et prendre une ou des part(s) sociale(s) de la cooperative ? Comment convaincre vis proches de nous rejoindre
+                                et d'investir dans la transition energetique ? Quelques elements de reflexion dans ce article, a faire circuler !
+                            </p>
+                        </div>
+                        <div class="plus">
+                            <img src="img/svg/grey-plus.svg" alt="ajouter">
+                        </div>
+                    </div>
+                    <a class="subscribe" href="#">
+                         Souscrire !
+                        <img src="img/svg/subscribe.svg" alt="souscrire">
+                    </a>
+                </div>
+        </article>
         <br>
-        <h2>blablablablablabla</h2>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <div class="plus">
-            <img src="svg/plus.svg" alt="ajouter">
+        <!-- First Article -->
+        <article class="actu">
+            <div class="articleHeader">
+                <h1>ACTUALITES</h1>
+                <div class="fleches">
+                    <a class="previous" href="#">
+                        <img class="previous" src="img/svg/fleche_gauche.svg" alt="precedent">
+                    </a>
+                    <a class="next" href=##">
+                        <img class="next" src="img/svg/fleche_droite.svg" alt="suivant">
+                    </a>
+                </div>
+            </div>
+            <div class="article">
+                <img class="imgArticle" src="img/photos/IMG_4106.jpg" alt="celebration">
+                <div class="content">
+                <h2>Un 24 novembre de celebration</h2>
+                <p>Nous inaugurerons prochainement les toitures photovoltaiques
+                    de Baratier ! L'occasion de celebrer deux projets marquants
+                    pour cette annee 2018, qui concretisent l'entree d'une nouvelle
+                    commune au societariat d'Energies Collectives. Si la matinee
+                    d'inauguration et "l'apero-energie" sont ouvert a tous, l'apres-midi
+                    sera consacre a un temps de reflexion et d'echange entre tous
+                    les cooperateurs de la SCIC.
+                </p>
+                </div>
+            </div>
+            <div class="add">
+                <img id="plus" src="img/svg/plus.svg" alt="ajouter">
+            </div>
+        </article>
+    </main>
+    <!-- Footer with contact links -->
+    <footer class="footer">
+        <div class="credentials">
+            <h2 class="follow">Nous suivre
+                <a href="#">
+                    <img src="img/svg/facebook.svg" alt="facebook ico"> 
+                </a> 
+            </h2>
+            <h2 class="contact">Nous contacter
+                <a href="#">
+                    <img src="img/svg/mail.svg" alt="mail ico">
+                </a> 
+            </h2>
+            <h2 class="search">Rechercher
+                <a href="#">
+                    <img src="img/svg/Search.svg" alt="mail ico">
+                </a> 
+            </h2>
         </div>
-        <a class="subscribe" href="#">
-            Souscrire !
-            <img src="svg/subscribe.svg" alt="souscrire">
-        </a>
-    </article>
-    <br>
-    <article class="actu">
-        <div class="articleHeader">
-            <h1>ACTUALITES</h1>
-            <div class="fleches">
+        <div class="newsletter">
+            <h2>Abonnez-vous a la Newsletter : </h2>
+            <div class="subs">
+                <input type="text" name="subscribeNewsletter">
                 <a href="#">
-                    <img src="svg/fleche_gauche.svg" alt="precedent">
-                </a>
-                <a href="#">
-                    <img src="svg/fleche_droite.svg" alt="suivant">
+                    <img src="img/svg/subscribe.svg" alt="s'inscrire">
                 </a>
             </div>
         </div>
-        <img class="imgArticle" src="photos/IMG_4106.jpg" alt="celebration">
-        <div class="content">
-        <h2>blablablablablabla</h2>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
+        <div class="partenaires">
+            <p>Nos partenaires : </p>
+            <img class="part" src="img/partenaires/arton82.jpg" alt="partenaire 1">
+            <img class="part" src="img/partenaires/arton110.jpg" alt="partenaire 2">
+            <img class="part" src="img/partenaires/paca_logo.png" alt="partenaire 3">
+            <img class="part" src="img/partenaires/arton124.jpg" alt="partenaire 4">
+            <img class="part" src="img/partenaires/Initiative-nord-hautes-alpes.png" alt="partenaire 5">
+            <img class="part" src="img/partenaires/enercoop.png" alt="partenaire 6">
+            <img class="part" src="img/partenaires/parc-ecrins_logo.jpg" alt="partenaire 7">
+            <img class="part" src="img/partenaires/udess-05_logo-seul.png" alt="partenaire 8">
+            <img class="part" src="img/partenaires/omnis_logo.png" alt="partenaire 9">
         </div>
-        <div class="add">
-            <img src="svg/plus.svg" alt="ajouter">
-        </div>
-    </article>
-    <br>
-    <article class="demarches">
-        <div class="articleHeader">
-            <h1>NOTRE DEMARCHES</h1>
-        </div>
-        <img class="imgArticle" src="photos/recadrage1_site.jpg" alt="celebration">
-        <div class="content">
-        <h2>blablablablablabla</h2>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        </div>
-        <div class="add">
-            <img src="svg/plus.svg" alt="ajouter">
-        </div>
-    </article>
-    <br>
-    <article class="temoignages">
-        <div class="articleHeader">
-            <h1>TEMOIGNAGES</h1>
-            <div class="fleches">
-                <a href="#">
-                    <img src="svg/fleche_droite.svg" alt="suivant">
-                </a>
-            </div>
-        </div>
-        <img class="imgArticle" src="photos/recadrage4_site.JPG" alt="celebration">
-        <div class="content">
-        <h2>blablablablablabla</h2>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        <p>blablablablablablablablablablablablablablablablablabla</p>
-        </div>
-        <div class="add">
-            <img src="svg/plus.svg" alt="ajouter">
-        </div>
-    </article>
+    </footer>
 </body>
 </html>

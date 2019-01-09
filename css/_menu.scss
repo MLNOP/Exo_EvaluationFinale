@@ -1,0 +1,33 @@
+/*MENU TOGGLE*/
+//classe menu de base
+.menu {
+  display: none;
+}
+//classe qui se rajoute
+.menuAfter{
+  hr{
+    color: #FFF;
+    height: 1px;
+  }
+  background-color: $menuBG;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  width: 90%;
+  border-radius: 0 0 5px 5px;
+  top: 40px;
+  right: 15px;
+  .menuDrop{
+    list-style-type: none;
+    a{
+      font-size: 20px;
+      text-decoration: none;
+      color: $menuTxtColor;
+    }
+  }
+  #subscribes{
+    background-color: $subscribe;
+    padding: 3px;
+    color: black;
+  }
+}

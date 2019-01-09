@@ -1,0 +1,43 @@
+/*FOOTER*/
+.footer{
+    padding: 2px;
+    color: $txtFooter;
+    text-align: center;
+    background-color: $footerBG;
+}
+.newsletter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.partenaires{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .part{
+        margin: 5px;
+        width: 30px;
+    }
+}
+.partenaires img:hover{
+    -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+    -webkit-transition:all 0.3s;
+    transition:all 0.3s;
+}
+.partenaires img{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+.subs img{
+    width: 35px;
+}
+.follow img {
+    width: 35px;
+}
+.contact img {
+    width: 35px;
+}
+.search img{
+    width: 55px;
+}

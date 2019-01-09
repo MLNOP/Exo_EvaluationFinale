@@ -1,3 +1,4 @@
+/*SVG*/
 .Icon {
     /* Permet de redimensionner en changeant la font-size de l’icône */
     width: 2em;
@@ -9,4 +10,10 @@
     /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
        Si vous utilisez normalize.css, inutile de l’ajouter. */
     overflow: hidden;
-  }
+}
+
+//si import en php, enleve les marges que prend le sprite
+.svg{
+    width: 0;
+    height: 0;
+}

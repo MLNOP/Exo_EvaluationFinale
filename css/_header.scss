@@ -1,28 +1,17 @@
-body {
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'GothamHTF';
-}
+/*HEADER*/
 .header{
-    height: 50px;
-    padding: 4px;
     display: flex;
     justify-content: space-between;
-    img{
-        width: 60%;
+    align-items: center;
+    height: 40px;
+    padding: 4px;
+    .logo{
+        height: 30px;
     }
-    a{
-        display: flex;
-        justify-content: flex-end;
-        width: 30%;
-        img{
-            width: 50px;
-        }
+    #menuIco{
+        height: 30px;
     }
 }
-.mainBG{
-    img{
-        width: 100%;
-    }
+.carousel{
+    width: 100%;
 }
