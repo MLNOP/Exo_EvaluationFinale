@@ -1,184 +1,243 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/toggle.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
-    <!-- Header avec menu -->
-    <header>
-        <div class="header">
-            <img class="logo" src="img/logos/EnergiesCollectives_rectangle_Logo_ajuste.svg" alt="logo energie collective">
-            <!-- SVG exemple avec menu-->
-                <img id="menuIco" src="img/svg/menu.svg" alt="menu ico">
-            <!-- exemple menu a toggle -->
-            <div id="menu" class="menu">
-                <ul class="menuDrop">
-                    <li><a href="#"><hr>Actualites &rarr;</a><hr></li>
-                    <li><a href="#">Nous connaitre &rarr;</a><hr></li>
-                    <li><a href="#">Nos installations &rarr;</a><hr></li>
-                    <li><a href="#">Economisons &rarr;</a><hr></li>
-                    <li><a href="#">En savoir plus &rarr;</a><hr></li>
-                </ul>
-                <ul class="menuDrop" >
-                    <li><a id="subscribes" href="#">Souscrire</a></li>
-                </ul>
+<div class="cache">
+    <?php require "sprite_svg/sprite_symbol_pictos.svg" ?>
+</div>
+
+	<header>
+        <div class="nav1">
+            <div class="logo">
+                <img src="img/EnergiesCollectives_rectangle_Logo_ajuste.svg">
+            </div>
+            <div class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu-toggle">
+                <li>Accueil</li>
+                <li>Accueil</li>
+                <li>Accueil</li>
+                <li>Accueil</li>
+                <li class="souscrire-menu">Souscrire</li>
+            </ul>
+        </div>
+
+        <div class="nav2">
+            <div class="logo">
+                <img src="img/EnergiesCollectivesLogo.svg">
+            </div>
+
+            <ul>
+                <li>Accueil</li>
+                <li>Accueil</li>
+                <li>Accueil</li>
+                <li>Accueil</li>
+                <li class="souscrire-menu">Souscrire</li>
+            </ul>
+        </div>
+	</header>
+
+    <img class="wallpaper" src="img/20161202_101925.jpg">
+
+    <div class="container1">
+        <div class="icon-logo">
+            <img src="img/pour_favicon.jpg">
+        </div>
+
+        <h1>L'énergie est notre affaire</h1>
+        <h2>Investissons dans la transition énergétique</h2>
+
+        <div class="gros-chiffres">
+            <div class="chiffre brown">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_coop"></use>
+                </svg>
+                <h3>Lorem Ipsum</h3>
+                <span>190</span>
+            </div>
+            <div class="chiffre green">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_photovoltaique"></use>
+                </svg>
+                <h3>Lorem Ipsum</h3>
+                <span>190</span>
+            </div>
+            <div class="chiffre yellow">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_production_energie"></use>
+                </svg>
+                <h3>Lorem Ipsum</h3>
+                <span>190</span>
+            </div>
+            <div class="chiffre blue">
+                <svg class="iconMenu">
+                    <use xlink:href="#picto_capital"></use>
+                </svg>
+                <h3>Lorem Ipsum</h3>
+                <span>190</span>
             </div>
         </div>
-        <img class="carousel" src="img/Photos/20161202_101925.jpg" alt="Carousel picture">
-    </header>
-    <br>
-    <main>
-        <!-- Slogan et statistiques de l'entreprise -->
-        <article class="presentation">
-            <!-- Slogan & icone -->
-            <div class="slogan">
-                <img class="logoWTxt" src="img/MAQUETTES/logo_ss_texte.svg" alt="logo">
-                <br>
-                <h1>L'energie est notre affaire<p id="slogan">Investissons dans la transition energetique</p></h1>    
+    </div>
+
+        <div class="bg-point">
+            <div class="bg-point-container1">
+                <h3>Lorem Ipsum est un faux texte pour rendre un projet semblable à du vrai texte.</h3>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae congue ante. Sed accumsan urna eget tristique tristique.</p>
+                    <ul>
+                        <li>Donec vel augue orci. Morbi ornare quam id congue facilisis. Curabitur imperdiet fringilla dolor.</li>
+                        <li>Donec vel augue orci. Morbi ornare quam id congue facilisis. Curabitur imperdiet fringilla dolor.</li>
+                        <li>Donec vel augue orci. Morbi ornare quam id congue facilisis. Curabitur imperdiet fringilla dolor.</li>
+                    </ul>
+                </div>
+
             </div>
-            <!-- Satistiques -->
-            <div class="stats">
-                    <div class="coop">
-                            <img class="Icon" src="img/svg/picto_coop.svg" alt="logo cooperateurs">
-                        <p class="desc">Cooperateurs</p>
-                        <p class="numbers">190</p>
-                    </div>
-                    <div class="photovoltaique">
-                            <img class="Icon" src="img/svg/picto_photovoltaique.svg" alt="logo photovoltaique">
-                        <p class="desc">Installations</p>
-                        <p class="numbers">8</p>
-                    </div>
-                    <div class="prod">
-                        <img class="Icon" src="img/svg/picto_production_energie.svg" alt="logo eclair">
-                        <p class="desc">Production Annuelle</p>
-                        <p class="numbers">141 MWh</p>
-                    </div>
-                    <div class="vente">
-                        <img class="Icon" src="img/svg/picto_capital.svg" alt="logo tirelire">
-                        <p class="desc">Capital</p>
-                        <p class="numbers">112950 €</p>
-                    </div>
+        </div>
+
+    <div class="container1">
+        <div class="btn-comprendre">
+            <span>Comprendre notre modèle de production</span>
+            <span class="plus">+</span>
+        </div>
+    </div>
+
+    <div class="bg-point">
+        <div class="bg-point-container1">
+            <h3>Lorem Ipsum est un faux texte pour rendre un projet semblable à du vrai texte ?</h3>
+            <p class="p-flex">Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                eros blandit sed. Nullam neque dolor, imperdiet ut elit sit amet, tempus faucibus ex.</p>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="btn-souscrire">
+            <span>Souscrire !</span>
+            <div class="puce-ok">
+                <img src="img/schema_souscrire.svg">
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <article class="yellow">
+            <h2>Actualités</h2>
+            <div class="article-flex">
+                <div class="img-article">
+                    <img src="img/IMG_20170121_122143.jpg">
                 </div>
-                <!-- Description de l'entreprise -->
-                <div class="description">
-                    <div class="topics">
-                        <div class="topicTitle">
-                            <h2>Produire et consommer de l'electricite renouvelable et locale c'est possible !</h2>
-                        </div>
-                        <div class="topic">
-                            <p>Habitants, entreprises et collectivites de Serre-Ponçon agissent ensemble, a travers la cooperative pour :
-                                <ul>
-                                    <li>Reduire les gaspillages energetiques : consommer moins pour produire moins,</li>
-                                    <li>Produire l'electricite localement : l'epargne citoyenne est investie dans les installations photovoltaiques</li>
-                                    <li>Agir ensemble pour l'interet collectif : une personne = une voix</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="comprendre">
-                        <h3 class="understand">Comprendre notre modele de production</h3>
-                        <img id="plus" src="img/svg/plus.svg" alt="ajouter">
-                    </div>
-                    <br>
-                    <div class="topics">
-                        <div class="topicTitle">
-                            <h2>Pourquoi devenir societaire d'Energies Collectives ?</h2>
-                        </div>
-                        <div class="topic">
-                            <p>
-                                Pourquoi passer a l'action et prendre une ou des part(s) sociale(s) de la cooperative ? Comment convaincre vis proches de nous rejoindre
-                                et d'investir dans la transition energetique ? Quelques elements de reflexion dans ce article, a faire circuler !
-                            </p>
-                        </div>
-                        <div class="plus">
-                            <img src="img/svg/grey-plus.svg" alt="ajouter">
-                        </div>
-                    </div>
-                    <a class="subscribe" href="#">
-                         Souscrire !
-                        <img src="img/svg/subscribe.svg" alt="souscrire">
-                    </a>
+                <div class="contenu-article">
+                    <h3>Notre démarche</h3>
+                    <p>Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor, imperdiet ut elit sit amet, tempus faucibus ex.
+                        Nunc imperdiet purus eget dapibus vestibulum.
+                        Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor.</p>
                 </div>
+                <img class="plus" src="svg/plus.svg">
+            </div>
         </article>
-        <br>
-        <!-- First Article -->
-        <article class="actu">
-            <div class="articleHeader">
-                <h1>ACTUALITES</h1>
-                <div class="fleches">
-                    <a class="previous" href="#">
-                        <img class="previous" src="img/svg/fleche_gauche.svg" alt="precedent">
-                    </a>
-                    <a class="next" href=##">
-                        <img class="next" src="img/svg/fleche_droite.svg" alt="suivant">
-                    </a>
+        <article class="green">
+            <h2>Actualités</h2>
+            <div class="article-flex">
+                <div class="img-article">
+                    <img src="img/IMG_20170121_122143.jpg">
                 </div>
-            </div>
-            <div class="article">
-                <img class="imgArticle" src="img/photos/IMG_4106.jpg" alt="celebration">
-                <div class="content">
-                <h2>Un 24 novembre de celebration</h2>
-                <p>Nous inaugurerons prochainement les toitures photovoltaiques
-                    de Baratier ! L'occasion de celebrer deux projets marquants
-                    pour cette annee 2018, qui concretisent l'entree d'une nouvelle
-                    commune au societariat d'Energies Collectives. Si la matinee
-                    d'inauguration et "l'apero-energie" sont ouvert a tous, l'apres-midi
-                    sera consacre a un temps de reflexion et d'echange entre tous
-                    les cooperateurs de la SCIC.
-                </p>
+                <div class="contenu-article">
+                    <h3>Notre démarche</h3>
+                    <p>Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor, imperdiet ut elit sit amet, tempus faucibus ex.
+                        Nunc imperdiet purus eget dapibus vestibulum.
+                        Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor.</p>
                 </div>
-            </div>
-            <div class="add">
-                <img id="plus" src="img/svg/plus.svg" alt="ajouter">
+                <img class="plus" src="svg/plus.svg">
             </div>
         </article>
-    </main>
-    <!-- Footer with contact links -->
-    <footer class="footer">
-        <div class="credentials">
-            <h2 class="follow">Nous suivre
-                <a href="#">
-                    <img src="img/svg/facebook.svg" alt="facebook ico"> 
-                </a> 
-            </h2>
-            <h2 class="contact">Nous contacter
-                <a href="#">
-                    <img src="img/svg/mail.svg" alt="mail ico">
-                </a> 
-            </h2>
-            <h2 class="search">Rechercher
-                <a href="#">
-                    <img src="img/svg/Search.svg" alt="mail ico">
-                </a> 
-            </h2>
-        </div>
-        <div class="newsletter">
-            <h2>Abonnez-vous a la Newsletter : </h2>
-            <div class="subs">
-                <input type="text" name="subscribeNewsletter">
-                <a href="#">
-                    <img src="img/svg/subscribe.svg" alt="s'inscrire">
-                </a>
+        <article>
+            <h2>Actualités</h2>
+            <div class="article-flex">
+                <div class="img-article">
+                    <img src="img/IMG_20170121_122143.jpg">
+                </div>
+                <div class="contenu-article">
+                    <h3>Notre démarche</h3>
+                    <p>Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor, imperdiet ut elit sit amet, tempus faucibus ex.
+                        Nunc imperdiet purus eget dapibus vestibulum.
+                        Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor.</p>
+                </div>
+                <img class="plus" src="svg/plus.svg">
             </div>
-        </div>
-        <div class="partenaires">
-            <p>Nos partenaires : </p>
-            <img class="part" src="img/partenaires/arton82.jpg" alt="partenaire 1">
-            <img class="part" src="img/partenaires/arton110.jpg" alt="partenaire 2">
-            <img class="part" src="img/partenaires/paca_logo.png" alt="partenaire 3">
-            <img class="part" src="img/partenaires/arton124.jpg" alt="partenaire 4">
-            <img class="part" src="img/partenaires/Initiative-nord-hautes-alpes.png" alt="partenaire 5">
-            <img class="part" src="img/partenaires/enercoop.png" alt="partenaire 6">
-            <img class="part" src="img/partenaires/parc-ecrins_logo.jpg" alt="partenaire 7">
-            <img class="part" src="img/partenaires/udess-05_logo-seul.png" alt="partenaire 8">
-            <img class="part" src="img/partenaires/omnis_logo.png" alt="partenaire 9">
-        </div>
-    </footer>
+        </article>
+        <article class="beige">
+            <h2>Actualités</h2>
+            <div class="article-flex">
+                <div class="img-article">
+                    <img src="img/IMG_20170121_122143.jpg">
+                </div>
+                <div class="contenu-article">
+                    <h3>Notre démarche</h3>
+                    <p>Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor, imperdiet ut elit sit amet, tempus faucibus ex.
+                        Nunc imperdiet purus eget dapibus vestibulum.
+                        Nunc imperdiet purus eget dapibus vestibulum. Donec quis dolor elit. Nam vel dignissim magna.
+                        Donec dictum mauris vitae lacinia elementum. Pellentesque commodo bibendum lectus, id feugiat
+                        eros blandit sed. Nullam neque dolor.</p>
+                </div>
+                <img class="plus" src="svg/plus.svg">
+            </div>
+            <div class="btn-savoir-plus">
+                <span>Voir toutes nos installations</span>
+            </div>
+        </article>
+
+        <footer>
+            <div class="menu-footer">
+                <ul>
+                    <li>Nous suivre</li>
+                    <li>Nous Contacter</li>
+                    <li>Rechercher</li>
+                </ul>
+                <h4>Abonnez-vous à la newsletter</h4>
+                <input type="text">
+                <input type="submit" value="&#10004;">
+            </div>
+
+            <div class="partenaires">
+                <span>Nos partenaires :</span>
+                <img src="partenaires/nef_logo.png">
+                <img src="partenaires/arton82.jpg">
+                <img src="partenaires/enercoop.png">
+                <img src="partenaires/Initiative-nord-hautes-alpes.png">
+                <img src="partenaires/udess-05.png">
+                <img src="partenaires/omnis.jpg">
+                <img src="partenaires/paca_logo.png">
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
 </body>
 </html>

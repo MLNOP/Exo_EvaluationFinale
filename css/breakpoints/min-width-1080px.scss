@@ -1,0 +1,125 @@
+@media screen and (min-width: 1080px) {
+  .wallpaper{
+    height: 475px;
+  }
+
+  header{
+    position: absolute;
+    width: 98%;
+    .nav1{
+      display: none;
+    }
+    .logo{
+      background-color: white;
+      margin-right: 5px;
+
+      img{
+        width: 72px;
+      }
+    }
+
+    .nav2{
+      display: flex;
+      width: 62%;
+      justify-content: space-between;
+      margin: 0 auto;
+      align-items: center;
+
+      ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        width: 204%;
+        background-color: #b3d143;
+        height: 36px;
+      }
+    }
+  }
+  .container1{
+    .btn-comprendre{
+      width: 60%;
+      margin: 20px auto;
+    }
+
+    .btn-souscrire{
+      width: 21%;
+    }
+  }
+
+  .bg-point{
+    .bg-point-container1{
+      display: flex;
+      justify-content: space-between;
+      width: 65%;
+
+      h3{
+        width: 40%;
+        text-align: right;
+      }
+
+      div{
+        width: 56%;
+        text-align: left;
+
+        p{
+          margin-bottom: 12px;
+        }
+      }
+
+      .p-flex{
+        width: 56%;
+        text-align: left;
+      }
+    }
+  }
+
+
+  .container2{
+    .article-flex{
+      display: flex;
+      justify-content: space-between;
+
+      .img-article{
+        width: 42%;
+      }
+      .contenu-article{
+        width: 55%;
+      }
+    }
+
+    article{
+      padding: 10px 20%;
+
+      div{
+        width: auto;
+      }
+
+      .btn-savoir-plus{
+        background-color: grey;
+        padding: 10px;
+        border-radius: 10px;
+        color: white;
+        margin: 10px auto;
+        text-align: center;
+        font-size: 20px;
+        width: 50%;
+      }
+    }
+
+    footer{
+      ul{
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .partenaires{
+        width: 48%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+}

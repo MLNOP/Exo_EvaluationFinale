@@ -1,0 +1,10 @@
+@media screen and (min-width: 769px) {
+  .container1{
+    width: 65%;
+    margin: 0 auto;
+
+    .gros-chiffres{
+      flex-wrap: nowrap;
+    }
+  }
+}
